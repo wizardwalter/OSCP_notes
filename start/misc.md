@@ -1,5 +1,3 @@
-Absolutely! Here’s the entire .md file in one single code block so you can easily copy & paste:
-
 # OSCP Quick Reference Guide
 
 ## 🔥 Essential Reminders
