@@ -31,3 +31,7 @@
 	•	Attack Surface → All points of contact that could be exploited.
 	•	Attack Vector → A specific vulnerability + exploit combination used by an attacker.
 
+CIA -
+Confidentiality: Can actors who should not have access to the system or information access the system or information?
+Integrity: Can the data or the system be modified in some way that is not intended?
+Availability: Are the data or the system accessible when and how they are intended to be?
