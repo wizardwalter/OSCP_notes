@@ -100,5 +100,7 @@
 - **Weeks 11-12:** Final Review + Weak Area Strengthening ✅
 - **Week 13:** **EXAM WEEK – SEND IT!** 💀🔥
 
-## ** MORE please see the rest of the directorys for my explicit notes**
-- **For Educational purposes only
+---
+
+## **📚MORE; please see the rest of the directorys for my explicit notes**
+- **For Educational purposes only**
