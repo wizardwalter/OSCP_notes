@@ -31,6 +31,8 @@
 	•	Attack Surface → All points of contact that could be exploited.
 	•	Attack Vector → A specific vulnerability + exploit combination used by an attacker.
 
+    Zero Trust encapsulates five key elements: Just in Time Access (JITA), which requires access to be validated just before access is granted; Just Enough Access (JEA), which aligns with the traditional concept of least privilege; tokenization and encryption to protect data; dynamic (or adaptive) access control policies to ensure that policy is always fit for purpose; and microsegmentation, to limit access to the appropriate level of granularity.Open Security, a somewhat counter-intuitive principle, states that the security of a system should not depend on its secrecy.Defense in Depth advocates for adding defenses to as many layers of a system as possible, so that if one is bypassed, another may still prevent full infiltration
+
 CIA -
 Confidentiality: Can actors who should not have access to the system or information access the system or information?
 Integrity: Can the data or the system be modified in some way that is not intended?
