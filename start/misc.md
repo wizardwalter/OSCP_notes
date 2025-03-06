@@ -37,3 +37,14 @@ CIA -
 Confidentiality: Can actors who should not have access to the system or information access the system or information?
 Integrity: Can the data or the system be modified in some way that is not intended?
 Availability: Are the data or the system accessible when and how they are intended to be?
+
+A typical penetration test comprises the following stages:
+
+Defining the Scope
+Information Gathering
+Vulnerability Detection
+Initial Foothold
+Privilege Escalation
+Lateral Movement
+Reporting/Analysis
+Lessons Learned/Remediation
