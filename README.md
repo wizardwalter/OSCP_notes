@@ -1,4 +1,4 @@
-```markdown
+
 ```markdown
 # OSCP Timeline - Optimized for Technical Mastery 🚀
 
@@ -170,4 +170,3 @@
 
 ## **📚MORE - please see the rest of the directorys for my explicit notes**
 - **For Educational purposes only**
-```
