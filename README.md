@@ -13,7 +13,7 @@
 - **Penetration Testing with Kali Linux: General Course Information** ✅ (Done)
 - **Introduction to Cybersecurity** ✅ (Done)
 - **Effective Learning Strategies** ✅ (Done)
-- **Report Writing for Penetration Testers** (Finish within 1 day)
+- **Report Writing for Penetration Testers** ✅ (Done)
 
 ### Action Plan:
 - ✅ **Finish report writing module ASAP**
@@ -31,7 +31,7 @@
 ✔️ Start Doing Extra Machines on **Proving Grounds / HackTheBox** (1-2 per day)  
 
 ### **Sections to Complete:**
-- **Information Gathering**
+- **Information Gathering** 80% done
 - **Vulnerability Scanning**
 - **Introduction to Web Application Attacks**
 - **Common Web Application Attacks**
