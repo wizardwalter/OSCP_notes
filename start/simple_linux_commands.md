@@ -36,8 +36,11 @@
 ## 🚀 Quick Usage Examples  
 
 - **Find "root" case-insensitively in `/etc/passwd`**  
-  ```bash
-  grep -i "root" /etc/passwd
+
+```
+ grep -i "root" /etc/passwd
+```
+ 
 
 
 

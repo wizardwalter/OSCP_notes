@@ -3,7 +3,6 @@
 ## 🔥 Essential Reminders
 - **Flags must be submitted before turning off a machine!**
 - **Use this command when connecting via SSH:**
-  ```bash
   ssh -o "UserKnownHostsFile=/dev/null" -o "StrictHostKeyChecking=no" learner@192.168.50.52
 
 	•	UserKnownHostsFile=/dev/null: Prevents the server host key from being recorded.

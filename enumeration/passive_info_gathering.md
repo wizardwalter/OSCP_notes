@@ -1,10 +1,9 @@
-# 🔎 Information Gathering & OSINT Techniques  
+🔎 Information Gathering & OSINT Techniques  
 
 ## 📌 Google Dorking (Advanced Search Queries)  
 Use **Google dorks** to uncover hidden information that is not directly accessible through a website's UI.  
 
 - **Find specific file types on a domain:**  
-  ```bash
   site:megacorpone.com filetype:php OR filetype:txt OR filetype:py
 
 	•	This searches for .php, .txt, and .py files within the megacorpone.com domain.
@@ -28,16 +27,13 @@ GitHub contains code, configurations, and potentially leaked secrets:
 
 owner:megacorpone
 
-
 	•	Find users, tech stacks, and accidental credential leaks:
 
 owner:megacorpone path:users
 
-
 	•	Use advanced search operators to find exposed credentials:
 
 owner:megacorpone password OR api_key OR secret
-
 
 
 🚨 Tip: Automate GitHub recon with tools like GitHub-Dorks or Gitleaks.
