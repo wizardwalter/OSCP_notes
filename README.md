@@ -28,7 +28,7 @@
 ✔️ Learn & Practice Enumeration, Scanning, & Web Attacks  
 ✔️ Start Completing Lab Machines  
 ✔️ Work Through Course Content at a Steady Pace  
-✔️ Start Doing Extra Machines on **Proving Grounds / HackTheBox** (1-2 per day)  
+✔️ Start Doing Extra Machines on **Proving Grounds / HackTheBox** (1-2 per week)  
 
 ### **Sections to Complete:**
 - **Information Gathering** 80% done
@@ -42,7 +42,7 @@
 ### **Action Plan:**
 - ✅ **Go deep into enumeration techniques** (Nmap, Gobuster, FFUF, Burp Suite)
 - ✅ **Practice web app attacks** (XSS, SQLi, LFI, SSRF, IDOR)
-- ✅ **Start Proving Grounds / HackTheBox (1 per day)**
+- ✅ **Start Proving Grounds / HackTheBox (1 per couple days)**
 - ✅ **Complete at least 30% of the OSCP labs**
 - ✅ Take **detailed notes** for report writing & methodology
 
@@ -52,7 +52,7 @@
 ### Goals:
 ✔️ Master Linux & Windows Privilege Escalation  
 ✔️ Work on Post-Exploitation & Lateral Movement  
-✔️ Increase External Machine Practice (2-3 per day)  
+✔️ Increase External Machine Practice (2-3 per week)  
 
 ### **Sections to Complete:**
 - **Fixing Exploits**
@@ -75,7 +75,7 @@
 ✔️ Complete OSCP Buffer Overflow Section  
 ✔️ Learn & Practice Writing a Custom BOF Exploit  
 ✔️ Apply BOF in Course Labs & External Machines  
-✔️ Increase Daily HackTheBox / Proving Grounds Practice (3 per day)  
+✔️ Increase Daily HackTheBox / Proving Grounds Practice (1 per day)  
 
 ### **Sections to Complete:**
 - **Port Redirection and SSH Tunneling**
@@ -96,7 +96,7 @@
 ✔️ Learn & Practice Active Directory Attacks  
 ✔️ Work Through All OSCP Course AD Modules  
 ✔️ Start Full-Length Exam Simulations  
-✔️ Increase External Machine Practice (3 per day)  
+✔️ Increase External Machine Practice (1-2 per day)  
 
 ### **Sections to Complete:**
 - **Active Directory Introduction and Enumeration**
@@ -134,7 +134,7 @@
 - ✅ Go through **OSCP notes & cheat sheets**
 - ✅ Review **Exam Report Writing Guidelines**
 - ✅ Do **at least 2 full-length OSCP practice exams**
-- ✅ Work on **3 machines per day on Proving Grounds / HackTheBox**
+- ✅ Work on **2 machines per day on Proving Grounds / HackTheBox**
 
 ---
 
@@ -157,12 +157,12 @@
 
 ## **💀 TL;DR: Optimized OSCP Course Timeline with Extra Practice**
 - **Weeks 1-1.5:** Finish Non-Technical Modules FAST ✅
-- **Weeks 1.5-4:** Enumeration + Web Attacks + 1 Machines Per Day ✅
-- **Weeks 5-7:** Privilege Escalation + 1 Machines Per Day ✅
+- **Weeks 1.5-4:** Enumeration + Web Attacks + 1-2 Machines Per week ✅
+- **Weeks 5-7:** Privilege Escalation + 2-3 Machines Per week ✅
 - **Weeks 8-9:** Buffer Overflow + Advanced Exploits + 1 Machines Per Day ✅
 - **Weeks 10-11:** Active Directory + Full-Length Exam Simulations ✅
-- **Weeks 12-13:** Final Review + 1-2 Machines Per Day ✅
-- **Weeks 13-16:** Practice + 2-3 Machines Per Day ✅
+- **Weeks 12-13:** Final Review + 3-4 Machines Per week ✅
+- **Weeks 13-16:** Practice + 1-2 Machines Per Day ✅
 - **Week 16:** **EXAM WEEK – SEND IT!** 💀🔥
 ```
 

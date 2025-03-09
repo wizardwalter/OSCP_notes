@@ -23,7 +23,35 @@ It also enables **aggressive scanning** (-A), which includes:
 ✅ Traceroute
   
 
-The results are **saved in Greppable format** (-oG top-port-sweep.txt), making it easier to filter later. 🚀
+The results are **saved in Greppable format** (-oG top-port-sweep.txt), making it easier to filter later. 
+
+# SMB(Server Message Block)
+
+It should be noted that SMB (TCP port 445) and NetBIOS are two separate protocols. NetBIOS is an independent session layer protocol and service that allows computers on a local network to communicate with each other.
+The [_NetBIOS_](https://www.techtarget.com/searchnetworking/definition/NetBIOS) service listens on TCP port 139, as well as several UDP ports
+modern implementations of SMB can work without NetBIOS, [_NetBIOS over TCP_](https://www.pcmag.com/encyclopedia/term/netbios-over-tcpip) (NBT) is required for backward compatibility and these are often enabled together.
+***enumeration of these two services often goes together***
+example nmap scan(notice the ports):
+
+```
+nmap -v -p 139,445 -oG smb.txt 192.168.50.1-254
+```
+
+specialized tools for specifically identifying NetBIOS information, such as `nbtscan`
+We can use this to query the NetBIOS name service for valid NetBIOS names, specifying the originating UDP port as 137 with the `-r` option
+
+example:
+```
+sudo nbtscan -r 192.168.50.0/24
+```
+
+***NetBIOS names are often very descriptive about the role of the host within the organization***
+
+
+
+
+
+
 **📌 Nmap Cheat Sheet for OSCP**
 
 **🔹 Basic Scans**

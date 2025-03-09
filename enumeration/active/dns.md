@@ -20,13 +20,15 @@ The **Domain Name System (DNS)** is a distributed database that translates domai
 ### **1️⃣ Query a Specific DNS Record**
 ```bash
 nslookup -type=MX megacorpone.com
-dig megacorpone.com MX
+OR
+nslookup -type=CNAME megacorpone.com
 ```
+use -type= ^(above) record types
 ### **2️⃣ Perform a Full DNS Lookup**
 ```bash
 dig megacorpone.com ANY
 ```
-
+retrieves **all available DNS records** and types of records for the specified domain. Scans all!
 ### **3️⃣ Reverse DNS Lookup (Find Hostname from IP)**
 ```bash
 nslookup 192.168.1.1
@@ -43,7 +45,9 @@ dnsrecon -d megacorpone.com -D ~/list.txt -t brt
 ```
 -d = domain name
 -D = file name containing potential subdomain strings
--t = type of enumeration to perform, in this case brt for brute force.
+-t = type of enumeration to perform, in this case brt for brute force.    - axfr(dns zone transfer)
+													    - std(standard)
+													    - brt(bruteforce)
 ### **6️⃣ Bruteforce Subdomains (Active Recon)**
 ```bash
 sublist3r -d megacorpone.com
@@ -54,6 +58,12 @@ dig AXFR @ns1.megacorpone.com megacorpone.com
 ```
 A Zone Transfer (AXFR) is a mechanism used to replicate DNS records between authoritative primary and secondary DNS servers.
 However, misconfigured DNS servers may allow unauthorized zone transfers, which can leak sensitive information about a target’s infrastructure.
+
+### **8️⃣DNSENUM**
+```bash
+dnsenum megacorpone.com
+```
+Will attempt dns zone transfer and also will find subdomains - note this one worked well
 
 ### manual bruteforce - create list.txt of subdomains you find fitting.
 ```bash

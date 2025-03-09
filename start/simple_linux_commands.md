@@ -42,5 +42,10 @@
 ```
  
 
+Connect to windows(rdp) from kali:
+```
+xfreerdp /u:<username> /p:<password> /v:<ip>
+```
+
 
 

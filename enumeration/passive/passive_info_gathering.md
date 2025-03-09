@@ -3,6 +3,8 @@
 ## 📌 Google Dorking (Advanced Search Queries)  
 Use **Google dorks** to uncover hidden information that is not directly accessible through a website's UI.  
 
+https://www.exploit-db.com/google-hacking-database
+
 - **Find specific file types on a domain:**  
   site:megacorpone.com filetype:php OR filetype:txt OR filetype:py
 
