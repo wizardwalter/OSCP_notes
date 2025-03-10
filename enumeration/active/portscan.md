@@ -124,11 +124,7 @@ s.close()
 
 SNMP is based on ***UDP***, a simple, stateless protocol, and is therefore susceptible to IP spoofing and replay attacks
 
-***To scan for open SNMP ports, we can run `nmap`, using the `-sU` option to perform UDP scanning and the `--open` option to limit the output and display only open ports.***
-
-```
-sudo nmap -sU --open -p 161 192.168.50.1-254 -oG open-snmp.txt
-```
+The **SNMP MIB Tree (Management Information Base)** is a structured database used for **network management**. It organizes information in a hierarchical tree format, where **branches** represent different organizations or network functions, and **leaves** correspond to specific variables that store data. These variables can be queried by external users to retrieve system information, monitor network performance, or manage devices remotely.
 
 Alternatively, we can use a tool such as [_onesixtyone_](http://www.phreedom.org/software/onesixtyone/), which will attempt a brute force attack against a list of IP addresses. First, we must build text files containing community strings and the IP addresses we wish to scan.
 

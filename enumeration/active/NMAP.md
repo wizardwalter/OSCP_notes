@@ -27,14 +27,21 @@ The results are **saved in Greppable format** (-oG top-port-sweep.txt), making i
 
 # SMB(Server Message Block)
 
-It should be noted that SMB (TCP port 445) and NetBIOS are two separate protocols. NetBIOS is an independent session layer protocol and service that allows computers on a local network to communicate with each other.
-The [_NetBIOS_](https://www.techtarget.com/searchnetworking/definition/NetBIOS) service listens on TCP port 139, as well as several UDP ports
-modern implementations of SMB can work without NetBIOS, [_NetBIOS over TCP_](https://www.pcmag.com/encyclopedia/term/netbios-over-tcpip) (NBT) is required for backward compatibility and these are often enabled together.
-***enumeration of these two services often goes together***
+**SMB (Server Message Block)** is a **network file-sharing protocol** used primarily by **Windows** systems to share files, printers, and other resources within a network.
+• SMB operates on **port 445** (modern) and **ports 139 & 137** (legacy NetBIOS).
+
+**Key Features of SMB**
+• Allows file and folder sharing across a network.
+• Supports **authentication** (user credentials) but sometimes allows **anonymous access**.
+• Can be used for **enumeration**, **password attacks**, and **exploitation**.
+
+***enumeration of these two services(SMB and NetBios) often goes together***
 example nmap scan(notice the ports):
 
 ```
 nmap -v -p 139,445 -oG smb.txt 192.168.50.1-254
+Or
+nmap -p 139,445 --script=smb-enum-shares,smb-enum-users 192.168.50.1/24
 ```
 
 specialized tools for specifically identifying NetBIOS information, such as `nbtscan`
@@ -48,7 +55,66 @@ sudo nbtscan -r 192.168.50.0/24
 ***NetBIOS names are often very descriptive about the role of the host within the organization***
 
 
+# SMTP(**Simple Mail Transfer Protocol**)
+SMTP is a protocol used to **send** emails between mail servers.
+• It operates on:
+• **Port 25** (default, often blocked to prevent spam)
+• **Port 465** (SMTP over SSL)
+• **Port 587** (STARTTLS, modern encryption)
+• **Not used for receiving emails** (IMAP & POP3 handle that).
 
+**SMTP Key Features**
+• Allows email transmission across networks.
+• Uses **mail servers** to route emails to the correct recipient.
+• Sometimes supports **VRFY** (verify user) and **EXPN** (expand mailing lists) commands, which can be used for **user enumeration**.
+
+```
+nmap -p 25,465,587 --script=smtp-commands <IP>
+```
+ Lists supported SMTP commands.
+```
+nmap -p 25 --script=smtp-enum <IP>
+```
+Retrieves the SMTP banner, which may reveal software version.
+```
+nmap -p 25 --script=smtp-enum-users <IP>
+```
+Tries **VRFY** and **EXPN** commands to check if a user exists.
+```
+nmap -p 25,465,587 --script=smtp-vuln* <IP>
+```
+Detects misconfigurations and known exploits.
+
+# SNMP(Simple Network Management Protocol)
+
+**SNMP (Simple Network Management Protocol)** is used for **monitoring and managing network devices** such as routers, switches, servers, and printers.
+• Operates on:
+• **UDP 161** (used for querying SNMP agents)
+• **UDP 162** (used for receiving SNMP traps/alerts)
+• SNMP allows **reading system information**, including network interfaces, uptime, running processes, and more.
+
+```
+nmap -p 161 --script=snmp-info <IP>
+```
+Retrieves SNMP system information (device name, OS, etc.), is it running??
+```
+nmap -p 161 --script=snmp-brute <IP>
+```
+Attempts to brute-force SNMP community strings (default: **public**, **private**).
+```
+nmap -p 161 --script=snmp-users <IP>
+```
+Retrieves a list of users from the system.
+```
+nmap -p 161 --script=snmp-vuln* <IP>
+```
+detects a list of known smnp vulnerabilities
+
+
+Another command to use without script
+```
+sudo nmap -sU --open -p 161 192.168.50.1-254 -oG open-snmp.txt
+```
 
 
 
