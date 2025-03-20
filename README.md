@@ -28,14 +28,14 @@
 ✔️ Learn & Practice Enumeration, Scanning, & Web Attacks  
 ✔️ Start Completing Lab Machines  
 ✔️ Work Through Course Content at a Steady Pace  
-✔️ Start Doing Extra Machines on **Proving Grounds / HackTheBox** (1-2 per week)  
+✔️ Start Doing Extra Machines on **Proving Grounds / HackTheBox**  
 
 ### **Sections to Complete:**
-- **Information Gathering** 80% done
-- **Vulnerability Scanning**
-- **Introduction to Web Application Attacks**
-- **Common Web Application Attacks**
-- **SQL Injection Attacks**
+- **Information Gathering** ✅
+- **Vulnerability Scanning**✅
+- **Introduction to Web Application Attacks**✅
+- **Common Web Application Attacks**✅
+- **SQL Injection Attacks** in progress
 - **Client-side Attacks**
 - **Locating Public Exploits**
 

